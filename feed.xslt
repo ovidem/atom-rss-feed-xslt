@@ -22,10 +22,10 @@
 					<h2><a><xsl:attribute name="href"><xsl:value-of select="atom:link/@href"/></xsl:attribute><xsl:value-of select="atom:title" /></a></h2>
 					<p><time>Published <xsl:value-of select="substring(atom:published, 0, 11)" /></time></p>
 <xsl:value-of select="atom:content" disable-output-escaping="yes" />
+<xsl:value-of select="atom:summary" />
 				</article>
 				</xsl:for-each>
 			</section>
-
 		</body>
 		</html>
 	</xsl:template>
